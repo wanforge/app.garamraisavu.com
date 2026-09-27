@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT. Permata Abadi Raisavu — Official Homepage & Portal Layanan</title>
+  <meta name="description" content="Situs resmi PT. Permata Abadi Raisavu — Produsen dan distributor garam industri, pangan, dan pertanian di Indonesia. Pusat verifikasi Google OAuth, kebijakan privasi, dan layanan pelanggan.">
+  <link rel="canonical" href="https://garamraisavu.com/">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://garamraisavu.com/">
+  <meta property="og:title" content="PT. Permata Abadi Raisavu — Official Homepage & Portal Layanan">
+  <meta property="og:description" content="Produsen dan distributor garam berkualitas di Indonesia. Portal resmi, verifikasi OAuth, Kebijakan Privasi, dan Ketentuan Layanan.">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Logo -->
+        <a href="#beranda" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform duration-200">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-sky-400 transition-colors">
+              PT. Permata Abadi Raisavu
+            </span>
+            <span class="text-xs text-slate-400 tracking-wider font-medium">garamraisavu.com</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#beranda" class="hover:text-sky-400 transition-colors">Beranda</a>
+          <a href="#tentang" class="hover:text-sky-400 transition-colors">Tentang Kami</a>
+          <a href="#layanan" class="hover:text-sky-400 transition-colors">Produk & Layanan</a>
+          <a href="#oauth-consent" class="hover:text-sky-400 transition-colors flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Google OAuth
+          </a>
+          <a href="#privasi" class="hover:text-sky-400 transition-colors">Kebijakan Privasi</a>
+          <a href="#ketentuan" class="hover:text-sky-400 transition-colors">Ketentuan Layanan</a>
+          <a href="#kontak" class="px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-semibold transition-colors shadow-md shadow-sky-600/20">
+            Kontak
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-toggle" aria-label="Toggle Navigation Menu" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-3 pb-5 space-y-2">
+      <a href="#beranda" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Beranda</a>
+      <a href="#tentang" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Tentang Kami</a>
+      <a href="#layanan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Produk & Layanan</a>
+      <a href="#oauth-consent" class="block px-3 py-2 rounded-md text-base font-medium text-sky-400 hover:bg-slate-800">Keamanan Google OAuth</a>
+      <a href="#privasi" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Kebijakan Privasi</a>
+      <a href="#ketentuan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800">Ketentuan Layanan</a>
+      <a href="#kontak" class="block px-3 py-2 rounded-md text-base font-medium text-sky-400 hover:bg-slate-800">Kontak Resmi</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="relative pt-16 pb-24 sm:pt-24 sm:pb-32 overflow-hidden">
+    <div class="absolute inset-0 -z-10 flex items-center justify-center opacity-30 pointer-events-none">
+      <div class="w-[600px] h-[600px] bg-gradient-to-tr from-sky-600/40 to-cyan-500/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-300 text-xs sm:text-sm font-semibold mb-6">
+        <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+        Portal Resmi Perusahaan & Verifikasi Layanan Digital
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight sm:leading-tight">
+        PT. Permata Abadi Raisavu
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Penyedia dan distributor garam terpercaya di Indonesia — melayani kebutuhan garam industri berkualitas tinggi, garam konsumsi bersertifikat SNI, dan garam sektor pertanian & peternakan.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#tentang" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-semibold transition-all shadow-lg shadow-sky-600/30 text-center">
+          Profil Perusahaan
+        </a>
+        <a href="#oauth-consent" class="w-full sm:w-auto px-7 py-3.5 rounded-xl border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-200 font-semibold transition-all text-center flex items-center justify-center gap-2">
+          <span>Verifikasi Google OAuth</span>
+          <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="mt-16 pt-10 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+          <div class="text-2xl font-bold text-white">Legalitas PT</div>
+          <div class="text-xs text-slate-400 mt-1 font-medium">Badan Hukum Resmi RI</div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+          <div class="text-2xl font-bold text-white">Standar SNI</div>
+          <div class="text-xs text-slate-400 mt-1 font-medium">Kontrol Kualitas Teruji</div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+          <div class="text-2xl font-bold text-white">OAuth 2.0</div>
+          <div class="text-xs text-slate-400 mt-1 font-medium">Autentikasi Aman & Terverifikasi</div>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+          <div class="text-2xl font-bold text-white">100% Aman</div>
+          <div class="text-xs text-slate-400 mt-1 font-medium">Perlindungan Privasi Ketat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="py-20 bg-slate-900/40 border-t border-slate-850">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-xs font-bold text-sky-400 tracking-wider uppercase">Tentang Kami</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
+          Komitmen Mutu & Keandalan Pasokan
+        </p>
+        <p class="mt-4 text-slate-400 leading-relaxed">
+          PT. Permata Abadi Raisavu bergerak di bidang manufaktur, pemrosesan, dan distribusi garam berkualitas prima. Kami bermitra dengan petani garam lokal dan industri manufaktur untuk memastikan stabilitas pasokan nasional.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center font-bold text-xl mb-6">
+            01
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Integritas & Kualitas</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Menjamin kadar NaCl optimal, tingkat kemurnian tinggi, serta kepatuhan pada regulasi kesehatan dan keselamatan pangan nasional.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center font-bold text-xl mb-6">
+            02
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Distribusi Terintegrasi</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Jejaring logistik modern yang melayani pengiriman tepat waktu untuk kebutuhan pabrik makanan, farmasi, tekstil, dan pasar ritel di seluruh Indonesia.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center font-bold text-xl mb-6">
+            03
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Transformasi Digital</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Mengadopsi portal digital terpusat untuk kemudahan pemesanan, faktur elektronik, dan autentikasi aman bagi mitra serta pengguna internal kami.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk & Layanan -->
+  <section id="layanan" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-xs font-bold text-sky-400 tracking-wider uppercase">Portofolio</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
+          Kategori Produk & Pasokan
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Garam Industri Kimia & Manufaktur</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Bahan baku garam dengan kemurnian tinggi untuk industri klor-alkali, penyamakan kulit, industri tekstil, dan pengolahan air (water treatment).
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Garam Konsumsi & Pangan (SNI)</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Garam dapur beryodium berkualitas higienis untuk konsumsi rumah tangga serta formulasi industri makanan dan minuman (F&B).
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Garam Pertanian & Peternakan</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Garam mineral khusus untuk pakan ternak, perbaikan struktur hara tanah perkebunan, dan industri pengawetan hasil perikanan laut.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google OAuth Consent & Security Section (Explicitly for Google Verification) -->
+  <section id="oauth-consent" class="py-20 bg-gradient-to-b from-slate-900/80 to-slate-950 border-t border-b border-sky-900/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-sky-500/20 bg-slate-900/90 p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md">
+            <!-- Google G Logo SVG -->
+            <svg class="w-6 h-6" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">Keterbukaan Integrasi Google OAuth 2.0</h2>
+            <p class="text-xs sm:text-sm text-sky-400 font-medium">Penggunaan Autentikasi Pengguna & Keamanan Data</p>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p>
+            Aplikasi dan portal digital <strong>PT. Permata Abadi Raisavu</strong> (<span class="text-sky-300 font-mono text-xs">garamraisavu.com</span>) menggunakan layanan <strong>Google OAuth 2.0 (Google Sign-In)</strong> untuk memungkinkan otentikasi identitas yang aman, cepat, dan terpercaya bagi staf internal, mitra logistik, dan klien terdaftar.
+          </p>
+
+          <div class="my-6 p-5 rounded-xl bg-slate-950/70 border border-slate-800 space-y-3">
+            <h3 class="font-bold text-white text-base flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+              Cakupan Izin (OAuth Scopes) yang Digunakan:
+            </h3>
+            <ul class="list-disc list-inside text-sm text-slate-300 space-y-1.5 ml-2">
+              <li><code class="px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-mono text-xs">openid</code> — Digunakan untuk memverifikasi token identitas standar industri.</li>
+              <li><code class="px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-mono text-xs">https://www.googleapis.com/auth/userinfo.email</code> — Digunakan untuk mengidentifikasi akun pengguna dan komunikasi status layanan.</li>
+              <li><code class="px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-mono text-xs">https://www.googleapis.com/auth/userinfo.profile</code> — Digunakan untuk menampilkan nama profil pada dasbor akun pengguna.</li>
+            </ul>
+          </div>
+
+          <h3 class="font-bold text-white text-base pt-2">Kebijakan Penggunaan Data (Limited Use Policy):</h3>
+          <p class="text-sm text-slate-400">
+            Aplikasi kami secara ketat mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:underline">Google API Services User Data Policy</a>, termasuk persyaratan <em>Limited Use</em>:
+          </p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm">
+            <li class="p-3 rounded-lg bg-slate-950/40 border border-slate-850 flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Tidak Menjual Data:</strong> Data pribadi Anda tidak pernah dijual kepada pihak ketiga, broker data, atau biro iklan.</span>
+            </li>
+            <li class="p-3 rounded-lg bg-slate-950/40 border border-slate-850 flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Tujuan Autentikasi:</strong> Data hanya digunakan untuk penyediaan akses portal resmi dan tidak digunakan untuk penargetan iklan.</span>
+            </li>
+            <li class="p-3 rounded-lg bg-slate-950/40 border border-slate-850 flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Enkripsi Standar:</strong> Seluruh komunikasi pertukaran token dilindungi enkripsi SSL/TLS (HTTPS) terkini.</span>
+            </li>
+            <li class="p-3 rounded-lg bg-slate-950/40 border border-slate-850 flex items-start gap-2">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Penghapusan Mudah:</strong> Pengguna dapat mencabut akses kapan saja melalui pengaturan akun Google atau menghubungi kami.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kebijakan Privasi (Privacy Policy) -->
+  <section id="privasi" class="py-20 border-t border-slate-850">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 text-center sm:text-left">
+        <h2 class="text-xs font-bold text-sky-400 tracking-wider uppercase">Dokumen Hukum</h2>
+        <h3 class="text-3xl font-extrabold text-white mt-1">Kebijakan Privasi (Privacy Policy)</h3>
+        <p class="text-xs text-slate-400 mt-2">Terakhir diperbarui: 27 September 2026</p>
+      </div>
+
+      <div class="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base space-y-6 leading-relaxed bg-slate-900/40 p-6 sm:p-10 rounded-2xl border border-slate-800">
+        <p>
+          Kebijakan Privasi ini menjelaskan bagaimana <strong>PT. Permata Abadi Raisavu</strong> ("kami", "perusahaan") mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi pengguna yang mengakses situs web dan sistem portal <strong>garamraisavu.com</strong>.
+        </p>
+
+        <h4 class="text-lg font-bold text-white">1. Informasi yang Kami Kumpulkan</h4>
+        <p>Kami mengumpulkan data yang diberikan secara sukarela saat Anda mendaftar atau masuk menggunakan penyedia autentikasi pihak ketiga:</p>
+        <ul class="list-disc list-inside space-y-1 text-slate-300">
+          <li><strong>Data Akun Google OAuth:</strong> Alamat email, nama lengkap, dan URL foto profil publik yang disediakan melalui persetujuan izin Google OAuth 2.0.</li>
+          <li><strong>Data Transaksi Bisnis:</strong> Informasi pemesanan, faktur pembelian, alamat pengiriman barang, dan kontak PIC perusahaan mitra.</li>
+          <li><strong>Data Teknis Otomatis:</strong> Alamat IP, jenis peramban (browser), sistem operasi, dan log aktivitas akses demi pemeliharaan keamanan sistem.</li>
+        </ul>
+
+        <h4 class="text-lg font-bold text-white">2. Tujuan Penggunaan Informasi</h4>
+        <p>Informasi yang terkumpul digunakan semata-mata untuk:</p>
+        <ul class="list-disc list-inside space-y-1 text-slate-300">
+          <li>Memverifikasi identitas pengguna dan memberikan akses ke dasbor portal layanan pelanggan.</li>
+          <li>Memproses pesanan pengiriman produk garam industri dan konsumen.</li>
+          <li>Mengirimkan pemberitahuan penting terkait status faktur, konfirmasi pemesanan, dan pembaruan keamanan.</li>
+          <li>Mencegah penyalahgunaan sistem, serangan siber, atau tindakan ilegal lainnya.</li>
+        </ul>
+
+        <h4 class="text-lg font-bold text-white">3. Penyimpanan & Perlindungan Data</h4>
+        <p>
+          Data Anda disimpan di server dengan enkripsi data saat transit (TLS/HTTPS) dan saat istirahat (at-rest). Kami menerapkan kontrol akses terbatas (zero-trust) sehingga hanya staf berwenang yang dapat mengakses data transaksi untuk keperluan operasional.
+        </p>
+
+        <h4 class="text-lg font-bold text-white">4. Hak Pengguna & Permohonan Penghapusan Data (Data Deletion)</h4>
+        <p>
+          Sesuai peraturan pelindungan data pribadi yang berlaku di Indonesia dan kebijakan platform global, Anda memiliki hak penuh untuk:
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-slate-300">
+          <li>Meminta salinan data pribadi Anda yang tersimpan di sistem kami.</li>
+          <li>Memperbarui atau memperbaiki data yang tidak akurat.</li>
+          <li><strong>Meminta Penghapusan Data Permanen:</strong> Anda dapat mengajukan permohonan penghapusan akun dan seluruh data terkait dengan mengirimkan email ke <a href="mailto:privacy@garamraisavu.com" class="text-sky-400 hover:underline">privacy@garamraisavu.com</a> dengan subjek <em>"Permohonan Penghapusan Data"</em>. Permohonan akan diproses dalam waktu maksimal 7 hari kerja.</li>
+          <li>Mencabut izin aplikasi melalui halaman pengelolaan akun Google Anda di <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:underline">myaccount.google.com/permissions</a>.</li>
+        </ul>
+
+        <h4 class="text-lg font-bold text-white">5. Hubungi Kami Terkait Privasi</h4>
+        <p>
+          Apabila Anda memiliki pertanyaan, keberatan, atau saran mengenai Kebijakan Privasi ini, silakan hubungi tim perlindungan data kami melalui email: <a href="mailto:privacy@garamraisavu.com" class="text-sky-400 hover:underline">privacy@garamraisavu.com</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ketentuan Layanan (Terms of Service) -->
+  <section id="ketentuan" class="py-20 bg-slate-900/30 border-t border-slate-850">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 text-center sm:text-left">
+        <h2 class="text-xs font-bold text-sky-400 tracking-wider uppercase">Ketentuan Hukum</h2>
+        <h3 class="text-3xl font-extrabold text-white mt-1">Ketentuan Layanan (Terms of Service)</h3>
+        <p class="text-xs text-slate-400 mt-2">Berlaku efektif sejak: 27 September 2026</p>
+      </div>
+
+      <div class="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base space-y-6 leading-relaxed bg-slate-900/40 p-6 sm:p-10 rounded-2xl border border-slate-800">
+        <p>
+          Selamat datang di situs web dan portal layanan <strong>PT. Permata Abadi Raisavu</strong> ("Perusahaan", "Kami"). Dengan mengakses situs <strong>garamraisavu.com</strong> dan portal turunannya, Anda menyetujui untuk terikat oleh Ketentuan Layanan ini.
+        </p>
+
+        <h4 class="text-lg font-bold text-white">1. Penggunaan Layanan</h4>
+        <p>
+          Pengguna setuju untuk menggunakan portal ini hanya untuk tujuan yang sah, mematuhi semua hukum yang berlaku di Republik Indonesia, dan tidak melakukan upaya untuk merusak, melumpuhkan, atau menyusup ke infrastruktur digital perusahaan.
+        </p>
+
+        <h4 class="text-lg font-bold text-white">2. Keamanan Akun</h4>
+        <p>
+          Saat Anda masuk menggunakan akun Google Anda melalui Google OAuth 2.0, Anda bertanggung jawab penuh untuk menjaga kerahasiaan kredensial akun Google Anda sendiri dan segala aktivitas yang terjadi di bawah akun Anda.
+        </p>
+
+        <h4 class="text-lg font-bold text-white">3. Hak Kekayaan Intelektual</h4>
+        <p>
+          Seluruh konten, merek dagang, logo, desain produk, nama domain <em>garamraisavu.com</em>, dan materi digital yang terkandung di dalam situs ini adalah milik eksklusif <strong>PT. Permata Abadi Raisavu</strong> dan dilindungi oleh undang-undang hak cipta dan merek dagang Republik Indonesia.
+        </p>
+
+        <h4 class="text-lg font-bold text-white">4. Batasan Tanggung Jawab</h4>
+        <p>
+          Layanan situs disediakan atas dasar "sebagaimana adanya" (as-is). Kami berupaya semaksimal mungkin memastikan akurasi data dan ketersediaan sistem tanpa henti, namun kami tidak bertanggung jawab atas kerugian tidak langsung akibat gangguan jaringan internet pihak ketiga atau force majeure.
+        </p>
+
+        <h4 class="text-lg font-bold text-white">5. Hukum yang Mengatur</h4>
+        <p>
+          Ketentuan Layanan ini diatur dan ditafsirkan sesuai dengan hukum Republik Indonesia. Setiap sengketa yang timbul akan diselesaikan secara musyawarah mufakat atau melalui yurisdiksi pengadilan di wilayah Republik Indonesia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak & Informasi Perusahaan -->
+  <section id="kontak" class="py-20 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-xs font-bold text-sky-400 tracking-wider uppercase">Kontak Resmi</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+            PT. Permata Abadi Raisavu
+          </h3>
+          <p class="mt-4 text-slate-400 text-sm sm:text-base leading-relaxed">
+            Hubungi tim operasional dan verifikasi layanan kami untuk kemitraan rantai pasok garam industri atau pertanyaan seputar integrasi sistem.
+          </p>
+
+          <div class="mt-8 space-y-4 text-sm text-slate-300">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Email Dukungan & Verifikasi OAuth:</div>
+                <a href="mailto:support@garamraisavu.com" class="text-white font-semibold hover:text-sky-400">support@garamraisavu.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 004 11m0 0a8 8 0 0016 0"></path></svg>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Domain Resmi Perusahaan:</div>
+                <span class="text-white font-semibold">https://garamraisavu.com</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Domisili Hukum:</div>
+                <span class="text-white font-semibold">Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 shadow-xl">
+          <h4 class="text-lg font-bold text-white mb-2">Pemberitahuan Kepatuhan Regulasi</h4>
+          <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+            Halaman ini berfungsi sebagai portal informasi resmi, rujukan verifikasi privasi, serta consent screen URL untuk pendaftaran Google Cloud Console & Google OAuth 2.0 API Verification.
+          </p>
+          <div class="p-4 rounded-xl bg-slate-950 border border-slate-850 flex items-center justify-between">
+            <span class="text-xs font-mono text-sky-300">garamraisavu.com</span>
+            <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              Verified Entity
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-850 py-10 bg-slate-950 text-slate-400 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-white">PT. Permata Abadi Raisavu</span>
+        <span>•</span>
+        <span>© 2026 Hak Cipta Dilindungi</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#oauth-consent" class="hover:text-white transition-colors">Google OAuth</a>
+        <a href="#privasi" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+        <a href="#ketentuan" class="hover:text-white transition-colors">Ketentuan Layanan</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggleBtn && mobileMenu) {
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      // Close mobile menu on anchor click
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
